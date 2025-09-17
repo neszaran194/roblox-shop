@@ -1,66 +1,49 @@
-# Dependencies
-node_modules/
-*/node_modules/
+# Auto detect text files and perform LF normalization
+* text=auto
 
-# Environment variables
-.env
-.env.local
-.env.*.local
-backend/.env
-frontend/.env.local
-admin-dashboard/.env.local
+# Source code files - always LF
+*.js text eol=lf
+*.jsx text eol=lf
+*.ts text eol=lf
+*.tsx text eol=lf
+*.json text eol=lf
+*.css text eol=lf
+*.scss text eol=lf
+*.html text eol=lf
+*.xml text eol=lf
+*.svg text eol=lf
 
-# Database
-*.db
-*.sqlite
-*.sqlite3
+# Configuration files - always LF
+*.md text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.toml text eol=lf
+*.ini text eol=lf
+*.env* text eol=lf
+.gitignore text eol=lf
+.gitattributes text eol=lf
 
-# Logs
-logs/
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# Database files - always LF
+*.sql text eol=lf
 
-# Runtime data
-pids/
-*.pid
-*.seed
-*.pid.lock
+# Shell scripts - always LF
+*.sh text eol=lf
 
-# Build outputs
-dist/
-build/
-*/build/
-*/dist/
+# Windows files - always CRLF
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
 
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-
-# OS
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
-
-# Docker
-.dockerignore
-
-# Uploads
-uploads/
-*/uploads/
-
-# Backup files
-database/backup/*.sql
-!database/backup/.gitkeep
-
-# Temporary files
-tmp/
-temp/
+# Binary files
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.zip binary
+*.tar.gz binary
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.otf binary
